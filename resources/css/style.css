@@ -1,0 +1,183 @@
+body {
+  font-family: Helvetica;
+  font-size: 18px;
+  color: white;
+}
+
+.container {
+  width: 960px;
+  margin: auto;
+}
+
+.header-container {
+  background-color: black;
+  padding: 0.66rem 0;
+}
+.header-contents {
+  display: inline-flex;
+}
+.header-contents img {
+  height: 1.5rem;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+  margin: auto;
+}
+.header-contents h3 {
+  font-size: 1rem;
+  margin: auto;
+}
+/*------END OF HEADER---------*/
+.headline {
+  background-image: url(../images/moto.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 25rem;
+}
+#headline-container {
+  padding-top: 9rem;
+}
+.headline-content {
+  padding: 2rem 3rem;
+  width: 20rem;
+  background-color: black;
+}
+.headline-content h4 {
+  font-weight: bold;
+}
+.headline-content h1 {
+  padding: 0.25rem 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+/*-----END OF HEADLINE----------*/
+.navigation {
+  background-color: firebrick;
+  padding: 0.75rem 0;
+}
+.desktop ul {
+  display: inline-flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.tablet {
+  display: none;
+}
+/*-----END OF NAVIGATION--------*/
+.products {
+  display: flex;
+  margin: 3rem auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.product-panel {
+  width: 30%;
+  border: 4px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.product-image img {
+  height: 9rem;
+  width: auto;
+  overflow: hidden;
+  padding: 2rem;
+}
+.product-desc {
+  background-color: black;
+  width: 100%;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+/*----END OF PRODUCTS-----*/
+.comp-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 4rem;
+}
+.info-panel {
+  width: 35%;
+}
+.info-title {
+  background-color: black;
+  padding: 1rem 2rem;
+}
+.info-desc {
+  padding-top: 0.5rem;
+  color: black;
+}
+/*-----END OF INFO--------*/
+.footer {
+  background-color: black;
+}
+#footer-text {
+  padding: 5rem;
+}
+/*-----END OF FOOTER-------*/
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: auto;
+  }
+  .desktop {
+    display: none;
+  }
+  .tablet {
+    display: block;
+  }
+  .tablet ul {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    width: auto;
+  }
+  #glasses {
+    display: none;
+  }
+  .product-panel {
+    width: 47%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .headline {
+    height: auto;
+  }
+  #headline-container {
+    padding-top: 10rem;
+  }
+  .headline-content {
+    padding: 1rem 2rem;
+    width: auto;
+  }
+  .headline-content h4 {
+    font-size: 0.77rem;
+  }
+  .headline-content h1 {
+    font-size: 1rem;
+  }
+  #watch {
+    display: none;
+  }
+  .products {
+    justify-content: center;
+  }
+  .product-panel {
+    width: 90%;
+  }
+  .comp-info {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .info-panel {
+    width: 90%;
+    margin-top: 0.5rem;
+  }
+  #footer-text p {
+    text-align: center;
+  }
+
+}
